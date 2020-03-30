@@ -72,3 +72,124 @@ li{
 }
 
 /* End Lists */
+
+/* Start Services */
+.my-skills {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+
+.icon-container {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #fecb24;
+  background-color: #005f75;
+  margin-bottom: 2rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i {
+  color: #fecb24;
+  font-size: 5rem;
+  margin: auto;
+  transform: rotate(-45deg);
+}
+/* End Services */
+
+/* Start Experience */
+.timeline ul {
+  border-left: 4px solid #fecb24;
+  border-radius: .8rem;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 auto;
+  position: relative;
+  padding: 5rem;
+  list-style: none;
+  text-align: left;
+  width: 70%;
+}
+
+.timeline h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: .1rem;
+  opacity: .3;
+}
+
+/*not in tutorial*/
+.timeline p {
+  margin-bottom: 1.5rem;
+}
+
+.timeline .date {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.timeline .date:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before {
+  content: attr(data-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.5rem;
+}
+
+.timeline .date::after {
+  content: '';
+  box-shadow: 0 0 0 4px #fecb24;
+  border-radius: 100%;
+  left: -8rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #005f75;
+}
+
+.resume {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.resume-link {
+  font-size: 3rem;
+}
+
+#pdf {
+  font-size: 3rem;
+}
+/* End Experience */

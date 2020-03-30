@@ -1,6 +1,20 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
+import { TextField, TextareaAutosize, Button, Card, CardContent, Grid } from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+    root: {
+      '& > *': {
+        marginBottom: theme.spacing(1),
+      },
+      Button: {
+          
+      }
+    },
+  }));
 
 function Contact() {
+    const classes = useStyles();
 
     return (
         <section class="contact" id="contact">
@@ -24,25 +38,22 @@ function Contact() {
                     </ul>
                 </div>
                 <br />
-
-                <form method="post" enctype="text/plain" data-aos="fade-up" data-aos-delay="300">
+            <Card>
+            <Grid container direction="column" justifyContent="center" alignItems="center">
+                <CardContent>
+                <form className={classes.root} noValidation method="post" enctype="text/plain" data-aos="fade-up" data-aos-delay="300">
                     <p>Leave me a quick note below or email me directly: laurie@laurieschroeder.net</p>
                     <br />
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name..." required />
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Enter your email..." required />
-                    <label for="services">Services:</label>
-                    <select name="services" id="services">
-                        <option value="">Front-End</option>
-                        <option value="">Back-end</option>
-                        <option value="">Fullstack</option>
-                        <option value="">Other</option>
-                    </select>
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="10" rows="10" required></textarea>
-                    <input type="submit" value="Submit" />
+                    <TextField id="name" label="What is your name?" color="primary" variant="outlined" fullWidth required/>
+                    <TextField id="email" label="What is your e-mail?" color="primary" variant="outlined" fullWidth required/>
+                    <TextField id="message" label="Message" multiline rows="6" variant="outlined" fullWidth required />
+                    <Grid item alignItems="flex-start">
+                    <Button variant="contained" color="primary">Send Message</Button> 
+                    </Grid>
                 </form>
+                </CardContent>
+                </Grid>
+            </Card>
             </div>
         </section>
     );
