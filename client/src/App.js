@@ -10,6 +10,14 @@ import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import Wrapper from "./Components/Wrapper";
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Get NoMatch page to work
+// All pages in Wrapper, page title & subtitile design
+// All pages, verify responsive layouts
+// Could I combine about & services or experience & services?
+// Add in accent colors places
+
 function App() {
 
   return (

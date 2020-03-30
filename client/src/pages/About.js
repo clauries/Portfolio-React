@@ -1,5 +1,13 @@
 import React from "react";
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Update image
+// Layout - image to side
+// Top margin added
+// Carosel of images?
+// Continue to revise details
+
 
 function About() {
 

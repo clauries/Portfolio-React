@@ -1,6 +1,10 @@
 import React from "react";
 import Nav from "../Components/Nav";
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Have nomatch send to landing page
+
 function NoMatch() {
     return (
         <div>

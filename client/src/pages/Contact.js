@@ -2,6 +2,17 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { TextField, TextareaAutosize, Button, Card, CardContent, Grid } from '@material-ui/core';
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Button logic
+// Email compatibility using Send Grid
+    // https://app.sendgrid.com/login?redirect_to=%2Fguide%3Ffrom%3Dprofile%26integrate%3Dtrue
+    // https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/mail
+    // https://github.com/sendgrid/sendgrid-nodejs
+// Centering icons
+// Spacing
+// Button on the left, not centered
+
 const useStyles = makeStyles(theme => ({
     root: {
       '& > *': {
@@ -10,6 +21,7 @@ const useStyles = makeStyles(theme => ({
       Button: {
           
       }
+
     },
   }));
 
@@ -42,7 +54,7 @@ function Contact() {
             <Grid container direction="column" justifyContent="center" alignItems="center">
                 <CardContent>
                 <form className={classes.root} noValidation method="post" enctype="text/plain" data-aos="fade-up" data-aos-delay="300">
-                    <p>Leave me a quick note below or email me directly: laurie@laurieschroeder.net</p>
+                    <p id="instructions">Leave me a quick note below or email me directly: laurie@laurieschroeder.net</p>
                     <br />
                     <TextField id="name" label="What is your name?" color="primary" variant="outlined" fullWidth required/>
                     <TextField id="email" label="What is your e-mail?" color="primary" variant="outlined" fullWidth required/>

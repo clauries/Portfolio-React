@@ -1,6 +1,19 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Formatting - particularly image sizes
+// Carousel of projects at top
+// Links to coding sites like Github & codepen (when I have a few up and running)
+// List all major repos 
+// Card with image of app
+    // OnHover -> Flip animation
+    // Back of card is project info, repo, deployed webpage
+    // Buttons for view app & view repo
+    // May need to upgrade heroku to host more apps
+
+
 const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {

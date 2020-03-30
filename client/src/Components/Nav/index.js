@@ -3,6 +3,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Button, Typography, AppBar, Toolbar, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
+// FUTURE DEVELOPMENT
+// =============================================
+// MenuIcon - add functionality
+    // About
+    // Services
+    // Portfolio
+    // Experience
+    // Contact
+// Gradient color? Off to side? Style to look cleaner
+// Develop logo/brand - something with a bridge?
+
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,

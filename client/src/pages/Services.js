@@ -1,5 +1,14 @@
 import React from "react";
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Formatting
+  // Smaller icons
+  // On cards
+  // Carousel -> be able to flip through cards 
+    // Animation of flipping to next card
+    // Can pick a card - maybe tabs?
+// Verify all skills learned in bootcamp are listed
 
 function Services() {
 

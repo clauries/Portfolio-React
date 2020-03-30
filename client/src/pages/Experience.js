@@ -1,6 +1,19 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
+// FUTURE DEVELOPMENT
+// =============================================
+// Typography components for all the words
+// Horizontal ine with dots
+    // OnHover -> info appears for that experience
+    // No need to scroll on computer screen
+    // Will be easy to convert to mobile
+        // Card with info appears underneith
+// Resume font color
+// Resume button moved to top of page
+// Continue to edit and update resume
+// Learn about, create, and add CV?
+
 const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {
