@@ -18,9 +18,7 @@ const useStyles = makeStyles(theme => ({
         flexDirection: 'row',
     },
     container: {
-        // display: 'flex',
-        // flexDirection: 'row',
-        margin: '0 15%',
+        width: '100%',
         marginTop: theme.spacing(2),
     }
 

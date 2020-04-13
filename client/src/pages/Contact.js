@@ -4,13 +4,11 @@ import { TextField, Typography, Button, Card, CardContent, Grid } from '@materia
 
 // FUTURE DEVELOPMENT
 // =============================================
-// Button logic
-// Email compatibility using Send Grid
-// https://app.sendgrid.com/login?redirect_to=%2Fguide%3Ffrom%3Dprofile%26integrate%3Dtrue
-// https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/mail
-// https://github.com/sendgrid/sendgrid-nodejs
-// Centering icons
-// Button on the left, not centered
+// Button logic for front-end sending the email
+// Email functionality using Send Grid
+    // https://app.sendgrid.com/login?redirect_to=%2Fguide%3Ffrom%3Dprofile%26integrate%3Dtrue
+    // https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/mail
+    // https://github.com/sendgrid/sendgrid-nodejs
 
 const useStyles = makeStyles(theme => ({
     root: {

@@ -3,7 +3,8 @@
   text-align: center;
 }
 
-.MuiTypography-h5 {
+.MuiTypography-h5,
+.MuiTypography-h4 {
   color: #005f75;
 }
 
@@ -49,7 +50,7 @@ li{
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  z-index: 1;
+  /* z-index: 1; */
 
 }
 
@@ -71,72 +72,14 @@ li{
 
 
 
-/* Start Contact */
-.social-media {
-  padding-top: 1rem;
-}
-
-.social-media i {
-  font-size: 5rem;
-  transition: color 650ms;
-}
-
-.fa-github-square {
-  color: #eee;
-}
-
-.fa-linkedin {
-  color: #eee;
-}
-
-.fa-github-square:hover {
-  color: #dd7901;
-}
-
-.fa-linkedin:hover {
-  color: #dd7901;
-}
-
-#instructions {
-  color: #002a38
-}
-
-/* 
-May use some of this for styling submit button
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 5px;
-  border: none;
-  outline-color: #fecb24;
-} */
-
-input[type="submit"] {
-  width: initial;
-  background-color: #c13301;
-  color: #fecb24;
-  padding: 1rem 2rem;
-  border-radius: .8rem;
-  cursor: pointer;
-  transition: background-color 650ms;
-}
-
-input[type="submit"]:hover {
-  color: #002a38;
-  background-color: #fecb24;
-}
-/* End Contact */
-
 /* Start Services */
 .my-skills {
-  margin-top: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
+  margin-top: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .skill {
@@ -145,6 +88,8 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  max-width: 400px;
+  
 }
 
 .skill h1 {
@@ -170,6 +115,8 @@ input[type="submit"]:hover {
   transform: rotate(-45deg);
 }
 /* End Services */
+
+
 
 /* Start Experience */
 .timeline ul {
@@ -250,3 +197,64 @@ input[type="submit"]:hover {
   font-size: 3rem;
 }
 /* End Experience */
+
+
+
+/* Start Contact */
+.social-media {
+  padding-top: 1rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+.fa-github-square {
+  color: #eee;
+}
+
+.fa-linkedin {
+  color: #eee;
+}
+
+.fa-github-square:hover {
+  color: #dd7901;
+}
+
+.fa-linkedin:hover {
+  color: #dd7901;
+}
+
+#instructions {
+  color: #002a38
+}
+
+/* 
+May use some of this for styling submit button
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: #fecb24;
+} */
+
+input[type="submit"] {
+  width: initial;
+  background-color: #c13301;
+  color: #fecb24;
+  padding: 1rem 2rem;
+  border-radius: .8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: #002a38;
+  background-color: #fecb24;
+}
+/* End Contact */

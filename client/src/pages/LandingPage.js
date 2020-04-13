@@ -1,16 +1,22 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
 import { Button, Typography } from '@material-ui/core';
 
 // FUTURE DEVELOPMENT
 // =============================================
 // Choose other font
-// Button below fullstack developer
 // Interactive particle animation (own component?)
-// Opaque card behind name to make stand out
-// Button to about page
 // Animation during transition to About Page
 
+const useStyles = makeStyles(theme => ({
+  exploreBtn: {
+    marginTop: theme.spacing(2),
+  },
+
+}));
+
 function LandingPage() {
+  const classes = useStyles();
 
   return (
     <div className="Landing Page" >
@@ -19,17 +25,18 @@ function LandingPage() {
           <Typography variant="h1">
             LAURIE
               <div class="lastName">
-                SCHROEDER
+              SCHROEDER
               </div>
           </Typography>
-          <Typography variant="h5">
+          <Typography variant="h4">
             Fullstack Web Developer
           </Typography>
+          <Button className={classes.exploreBtn} variant="contained" color="primary" href="/about">
+            Explore Site
+          </Button>
         </div>
       </div>
-      <Button variant="contained" href="/about">
-        Explore Site
-      </Button>
+
     </div>
   );
 
