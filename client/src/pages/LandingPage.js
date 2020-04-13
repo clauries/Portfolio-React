@@ -12,18 +12,26 @@ import { Button, Typography } from '@material-ui/core';
 
 function LandingPage() {
 
-    return (
-      <div className="Landing Page" >
-        <div class="container">
-            <div class="landing-text">
-                <Typography variant="h1">LAURIE <div class="lastName">SCHROEDER</div>
-                </Typography>
-                <Typography variant="h5">Fullstack Web Developer</Typography>
-            </div>
-            <Button>Explore Site</Button>
+  return (
+    <div className="Landing Page" >
+      <div class="container">
+        <div class="landing-text">
+          <Typography variant="h1">
+            LAURIE
+              <div class="lastName">
+                SCHROEDER
+              </div>
+          </Typography>
+          <Typography variant="h5">
+            Fullstack Web Developer
+          </Typography>
         </div>
       </div>
-    );
+      <Button variant="contained" href="/about">
+        Explore Site
+      </Button>
+    </div>
+  );
 
 };
 

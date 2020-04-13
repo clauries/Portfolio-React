@@ -12,6 +12,8 @@ import Wrapper from "./Components/Wrapper";
 
 // FUTURE DEVELOPMENT
 // =============================================
+// Further integrate Material-UI components
+  // https://material-ui.com/
 // Get NoMatch page to work
 // All pages in Wrapper, page title & subtitile design
 // All pages, verify responsive layouts

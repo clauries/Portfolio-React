@@ -9,7 +9,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #002a38;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background: #002a38; */
+  /* background-image: linear-gradient(to top, #5ffbf1, #52eee0, #45e2ce, #39d5bd, #2dc9ac, #0fb6a7, #00a29f, #008f94, #007085, #00516f, #003455, #051937); */
+  /* background-image: radial-gradient(circle, #5ffbf1, #52eee0, #45e2ce, #39d5bd, #2dc9ac, #0fb6a7, #00a29f, #008f94, #007085, #00516f, #003455, #051937); */
+  /* background-image: radial-gradient(circle, #1db896, #009c8f, #008083, #006571, #004b5a, #003e50, #003245, #002639, #002339, #002039, #011d38, #051937); */
+  background-image: radial-gradient(circle, #005f75, #005569, #004b5e, #004152, #003747, #003143, #002c3e, #002639, #002339, #002039, #011d38, #051937);
 }
 
 code {

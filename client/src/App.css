@@ -3,6 +3,20 @@
   text-align: center;
 }
 
+/* Colors
+Yellow: #fecb24 - 254, 203, 36 
+    other options#fecb24 - 240, 178, 1
+Orange: #dd7901 - 221, 121, 1
+    other options: #f37e00 - 243, 126, 0
+Brown: #a04d00 - 160, 77, 0
+Burgundy: #c13301 - 193, 51, 1
+    other options: #611115 - 97, 17, 21 or #4a2113 - 74, 33, 19
+Blue: #002a38 - 0, 42, 56
+    other options: #010101, #021d32, #021f33 (background) or #051e2e - 5, 30, 46
+Teal: #005f75 - 0, 95, 117
+    other options: #103e38 or #005c71
+*/
+
 /* Start Lists */
 .nav-list {
   list-style: none;
@@ -37,7 +51,7 @@ li{
 .landing-text h1 {
 
   font-family: 'Josefin Sans', sans-serif;
-  background: linear-gradient(to top, #fecb24, #005c71);
+  background: linear-gradient(to top, #fecb24, #c13301);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;

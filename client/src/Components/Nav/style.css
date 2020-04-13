@@ -1,0 +1,9 @@
+.MuiDrawer-paper {
+    /* background: linear-gradient(to bottom, #fecb24, #8dc044, #12a66f, #005f75); */
+    /* background: linear-gradient(to bottom, #fecb24, #005f75); */
+    background: linear-gradient(to bottom, #fecb24, #f3a602, #e68200, #d55c00, #c13301);
+}
+.MuiSvgIcon-root,
+.MuiTypography-body1 {
+    color: #002a38;
+}
