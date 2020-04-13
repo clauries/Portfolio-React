@@ -29,6 +29,7 @@ Teal: #005f75 - 0, 95, 117
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 li{
