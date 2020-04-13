@@ -1,27 +1,39 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
 
 // FUTURE DEVELOPMENT
 // =============================================
 // Update image
 // Layout - image to side
-// Top margin added
 // Carosel of images?
 // Continue to revise details
+const useStyles = makeStyles(theme => ({
+    root: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    container: {
+        // display: 'flex',
+        // flexDirection: 'row',
+        margin: '0 12%',
+    }
 
+}));
 
 function About() {
+    const classes = useStyles();
 
     return (
-      <div >
-        <section class="about" id="about">
-            <div class="container">
-                <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+      <div className={classes.root}>
+        <section className="about" id="about">
+            <div className={classes.container}>
+                <div className="profile-img" data-aos="fade-right" data-aos-delay="300">
                     <img src="assets/imgs/Laurie.Schroeder.png" alt="Profile Image" />
                 </div>
-                <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-                    <div class="about-heading">
-                        <h1>About</h1>
-                        <h6>Myself</h6>
+                <div className="about-details" data-aos="fade-left" data-aos-delay="600">
+                    <div className="about-heading">
+                        <h1>About Myself</h1>
+                        {/* <h6>Myself</h6> */}
                     </div>
                     <p>
                         Hi! I'm Laurie, a full stack developer with a background in emotional intelligence and

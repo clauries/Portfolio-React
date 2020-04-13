@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {
     AppBar,
     Drawer,
@@ -42,7 +42,6 @@ const useStyles = makeStyles(theme => ({
 
 function Nav() {
     const classes = useStyles();
-    const theme = useTheme();
     const [state, setState] = React.useState({ left: false });
 
     const toggleDrawer = (anchor, open) => (event) => {
