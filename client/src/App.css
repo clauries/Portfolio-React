@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.MuiTypography-h5 {
+  color: #005f75;
+}
+
 /* Colors
 Yellow: #fecb24 - 254, 203, 36 
     other options#fecb24 - 240, 178, 1
@@ -63,6 +67,8 @@ li{
 }
 
 /* End Landing Page */
+
+
 
 /* Start Contact */
 .social-media {
