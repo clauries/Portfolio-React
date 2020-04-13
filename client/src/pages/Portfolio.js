@@ -11,16 +11,11 @@ import ProjectCard from '../Components/ProjectCard';
 
 // FUTURE DEVELOPMENT
 // =============================================
-// Formatting - particularly image sizes
-// Carousel of projects at top
-// Links to coding sites like Github & codepen (when I have a few up and running)
-// List all major repos 
+// Update/Add repos 
+// Move projects variable to it's own file
 // Card with image of app
-// OnHover -> Flip animation
-// Back of card is project info, repo, deployed webpage
-// Buttons for view app & view repo
-// May need to upgrade heroku to host more apps
-
+    // OnHover -> Flip animation
+    // Back of card is project info, repo, deployed webpage
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -109,7 +104,6 @@ function Portfolio() {
                             image={project.image}
                         />
                     )
-
                 })}
             </div>
         </div>

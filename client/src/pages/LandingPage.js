@@ -6,7 +6,7 @@ import { Button, Typography } from '@material-ui/core';
 // =============================================
 // Choose other font
 // Interactive particle animation (own component?)
-// Animation during transition to About Page
+// Animation during transition to About Page?
 
 const useStyles = makeStyles(theme => ({
   exploreBtn: {
@@ -36,10 +36,8 @@ function LandingPage() {
           </Button>
         </div>
       </div>
-
     </div>
   );
-
 };
 
 export default LandingPage;
