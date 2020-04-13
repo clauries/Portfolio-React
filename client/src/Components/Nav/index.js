@@ -78,12 +78,12 @@ function Nav() {
                     "redirect": "/services",
                     "icon": <FingerprintIcon />
                 }
-            case "Experience":
-                // Need to add code for logging out. Maybe not here...?
-                return {
-                    "redirect": "/experience",
-                    "icon": <WorkIcon />
-                }
+            // case "Experience":
+            //     // Need to add code for logging out. Maybe not here...?
+            //     return {
+            //         "redirect": "/experience",
+            //         "icon": <WorkIcon />
+            //     }
             case "Contact":
                 // Need to add code for logging out. Maybe not here...?
                 return {
@@ -103,7 +103,9 @@ function Nav() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Home', 'About', 'Portfolio', 'Services', 'Experience', 'Contact',].map((text, index) => (
+                {['Home', 'About', 'Portfolio', 'Services', 
+                // 'Experience', 
+                'Contact',].map((text, index) => (
                     <ListItem button key={text} component="a" href={chooseMenuList({ text }).redirect}>
                         <ListItemIcon>{chooseMenuList({ text }).icon}</ListItemIcon>
                         <ListItemText primary={text} />

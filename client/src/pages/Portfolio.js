@@ -25,10 +25,15 @@ import ProjectCard from '../Components/ProjectCard';
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap', 
-        justifyContent: 'center',       
+        flexDirection: 'column',
         margin: '0 12%',
+    },
+    cardList: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        marginTop: theme.spacing(2),
     },
 
 }));
@@ -52,7 +57,7 @@ function Portfolio() {
             deployedLink: 'https://limitless-atoll-63723.herokuapp.com/',
             repoLink: 'https://github.com/alpinelife37/Project-2',
             image: './assets/imgs/star-gazer.png'
-        },   
+        },
         {
             name: 'Bookey',
             alt: 'Bookey Search Page',
@@ -89,7 +94,11 @@ function Portfolio() {
 
     return (
         <div className={classes.root}>
-            {projects.map(project => {
+            <Typography variant="h2">
+                Portfolio
+            </Typography>
+            <div className={classes.cardList}>
+                {projects.map(project => {
                     return (
                         <ProjectCard
                             name={project.name}
@@ -102,6 +111,7 @@ function Portfolio() {
                     )
 
                 })}
+            </div>
         </div>
     );
 };

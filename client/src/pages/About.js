@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 // FUTURE DEVELOPMENT
 // =============================================
@@ -15,7 +16,8 @@ const useStyles = makeStyles(theme => ({
     container: {
         // display: 'flex',
         // flexDirection: 'row',
-        margin: '0 12%',
+        margin: '0 15%',
+        marginTop: theme.spacing(2),
     }
 
 }));
@@ -26,14 +28,15 @@ function About() {
     return (
       <div className={classes.root}>
         <section className="about" id="about">
+            <Typography variant="h2">
+                About Myself
+            </Typography>
             <div className={classes.container}>
                 <div className="profile-img" data-aos="fade-right" data-aos-delay="300">
                     <img src="assets/imgs/Laurie.Schroeder.png" alt="Profile Image" />
                 </div>
                 <div className="about-details" data-aos="fade-left" data-aos-delay="600">
                     <div className="about-heading">
-                        <h1>About Myself</h1>
-                        {/* <h6>Myself</h6> */}
                     </div>
                     <p>
                         Hi! I'm Laurie, a full stack developer with a background in emotional intelligence and

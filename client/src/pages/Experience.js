@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 // FUTURE DEVELOPMENT
 // =============================================
+// This page did not transfer well to React; will need to rethink
+// Currently removed from routes for deployment.
+
 // Typography components for all the words
 // Horizontal ine with dots
     // OnHover -> info appears for that experience

@@ -1,4 +1,6 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 // FUTURE DEVELOPMENT
 // =============================================
@@ -10,16 +12,30 @@ import React from "react";
     // Can pick a card - maybe tabs?
 // Verify all skills learned in bootcamp are listed
 
+const useStyles = makeStyles(theme => ({
+    root: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    container: {
+        // display: 'flex',
+        // flexDirection: 'row',
+        margin: '0 15%',
+        marginTop: theme.spacing(2),
+    }
+
+}));
+
 function Services() {
+    const classes = useStyles();
 
     return (
-      <div >
+      <div className={classes.root}>
         <section class="services" id="services">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Services</h1>
-                    <h6>What I can do for you</h6>
-                </div>
+        <Typography variant="h2">
+                Services & Skills
+            </Typography>
+            <div className={classes.container}>
                 <div class="my-skills">
                     <div class="skill" data-aos="fade-in" data-aos-delay="300">
                         <div class="icon-container">

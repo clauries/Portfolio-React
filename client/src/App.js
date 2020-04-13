@@ -4,7 +4,7 @@ import './App.css';
 import LandingPage from "./pages/LandingPage.js";
 import About from "./pages/About.js";
 import NoMatch from "./pages/NoMatch.js";
-import Experience from "./pages/Experience";
+// import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
@@ -31,7 +31,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/services" component={Services} />
             <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/experience" component={Experience} />
+            {/* <Route exact path="/experience" component={Experience} /> */}
             <Route exact path="/contact" component={Contact} />
           </Wrapper>
           <Route component={NoMatch} />
