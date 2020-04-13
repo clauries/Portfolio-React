@@ -8,6 +8,7 @@ import NoMatch from "./pages/NoMatch.js";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
+import Resume from "./Components/Resume";
 import Wrapper from "./Components/Wrapper";
 
 // FUTURE DEVELOPMENT
@@ -31,6 +32,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/services" component={Services} />
             <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/resume" component={Resume} />
             {/* <Route exact path="/experience" component={Experience} /> */}
             <Route exact path="/contact" component={Contact} />
           </Wrapper>

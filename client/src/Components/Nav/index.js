@@ -17,7 +17,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import PersonIcon from '@material-ui/icons/Person';
 import WebIcon from '@material-ui/icons/Web';
-import WorkIcon from '@material-ui/icons/Work';
+import AttachmentIcon from '@material-ui/icons/Attachment';
+// import WorkIcon from '@material-ui/icons/Work';
 import './style.css';
 
 
@@ -62,30 +63,31 @@ function Nav() {
                 }
             case "About":
                 return {
-                    // Future development: need to update file path when available
                     "redirect": "/about",
                     "icon": <PersonIcon />
                 }
             case "Portfolio":
                 return {
-                    // Future development: need to update file path when available
                     "redirect": "/portfolio",
                     "icon": <WebIcon />
                 }
             case "Services":
-                // Need to add code for logging out. Maybe not here...?
                 return {
                     "redirect": "/services",
                     "icon": <FingerprintIcon />
                 }
+            case "Resume":
+                return {
+                    "redirect": "/resume",
+                    "icon": <AttachmentIcon />
+                }
             // case "Experience":
-            //     // Need to add code for logging out. Maybe not here...?
+            //
             //     return {
             //         "redirect": "/experience",
             //         "icon": <WorkIcon />
             //     }
             case "Contact":
-                // Need to add code for logging out. Maybe not here...?
                 return {
                     "redirect": "/contact",
                     "icon": <GroupIcon />
@@ -103,7 +105,7 @@ function Nav() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Home', 'About', 'Portfolio', 'Services', 
+                {['Home', 'About', 'Portfolio', 'Services', 'Resume',
                 // 'Experience', 
                 'Contact',].map((text, index) => (
                     <ListItem button key={text} component="a" href={chooseMenuList({ text }).redirect}>
