@@ -1,18 +1,17 @@
 ![Issues](https://img.shields.io/github/issues/clauries/Portfolio-React)  ![Forks](https://img.shields.io/github/forks/clauries/Portfolio-React)  ![Stars](https://img.shields.io/github/stars/clauries/Portfolio-React)  ![License](https://img.shields.io/github/license/clauries/Portfolio-React)  [![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fclauries%2FPortfolio-React)
 
 # Portfolio-React
-Developing a React version of my portfolio
+Converted my portfolio to a React app. 
 
 <img src="client\public\assets\imgs\portfolio.png"/>
 
 #### [Deployed App](https://schroeder-portfolio.herokuapp.com/)
 
 ## Concept
-As a developer, I want to showcase my React knowledge by building a portfolio with React so that my skill level can be seen by prospective employers.
+As a developer, I want to convert my portfolio to React so that prospective employers may see a few of my React skills.
 
 ## Local Installation and Usage
-1. Install the required modules by typing "npm install" or "npm i" using your code editor terminal; must be at the same level as the package.json.
-    * Should you want to seed the app with a few books, at the root of the app, use command "npm run seed".
+1. Install the required modules by typing "npm install" or "npm i" using your code editor terminal at the application's root.
 2. Run the app by typing "npm start", "node server.js", or "node server."
 3. The console log will display "Server listening on: http://localhost:3000 ."
 4. React should automatically open a webpage on your default browser. Should this not happen, you can hold control and click on the address to go directly to the app. App will open to the search page.
