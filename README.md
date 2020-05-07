@@ -5,7 +5,7 @@ Developing a React version of my portfolio
 
 <img src="client\public\assets\imgs\portfolio.png"/>
 
-#### [Deployed App](https://young-citadel-93602.herokuapp.com/)
+#### [Deployed App](https://schroeder-portfolio.herokuapp.com/)
 
 ## Concept
 As a developer, I want to showcase my React knowledge by building a portfolio with React so that my skill level can be seen by prospective employers.
