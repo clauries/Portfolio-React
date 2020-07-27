@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
 // FUTURE DEVELOPMENT
@@ -22,23 +22,18 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-function Resume() {
+function ResumeBtn() {
     const classes = useStyles();
 
     return (
         <div className={classes.root}>
-            <Typography variant="h2">
-                Resume
-            </Typography>
-            <div className={classes.container} id="resume">
                 <div className={classes.container}>
                     <Button startIcon={<PictureAsPdfIcon/>} href="./assets/imgs/schroeder-resume.pdf" target="_blank" color="primary" variant="contained" className={classes.resumeLink}>
-                        Resume
+                        Download
                     </Button>
                 </div>
-            </div>
         </div>
     );
 };
 
-export default Resume;
+export default ResumeBtn;
